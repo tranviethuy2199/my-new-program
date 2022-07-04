@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Market Research Survey</title>
+    <style>
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+        table {
+            text-align: center;
+        }
+        .b {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <header id="header" class="infor">
+        <h2 class=""> Market Research Survey</h2>
+        <div class="">Please take a few moments to complete this satisfaction survey</div>
+        </header>
+    </form>
+      <table class="b">
+          <tr>
+              <td>what is you age range ?</td>
+          </tr>
+          <tr>
+              <td>
+                  <label>
+                      <select style="width:500px">
+                          <option>18-24</option>
+                          <option>25 -34</option>
+                          <option>35-50</option>
+                          <option>50+</option>
+                      </select>
+                  </label>
+              </td>
+          </tr>
+          <tr>
+              <td>what is your yearly income range?</td>
+          </tr>
+          <tr>
+              <td>
+                  <label>
+                      <select style="width:500px">
+                          <option>$0-$25,000</option>
+                          <option>$25,000-$50,000</option>
+                          <option>$50,000-$100,000</option>
+                          <option>$100,000+</option>
+                      </select>
+                  </label>
+              </td>
+          </tr>
+      </table>
+      <form style="background-color: burlywood">
+          Gender Identity<br>
+          <label><input type="radio" name="male" value="Male" ></label>
+          Male<br>
+          <label><input type="radio" name="female" value="female"></label>
+          Female<br>
+          <label><input type="radio" name="nonbinary" value="nonbinary"></label>
+          Nonbinary<br>
+          <label><input type="radio" name="other" value="other"></label>
+          Other<br>
+          <table>
+              <tr>
+                  <td> </td>
+                  <td>
+                      <label for="text"></label><input type="text" id="text">
+                  </td>
+              </tr>
+          </table>
+      </form>
+      <form>
+          <tr>
+              <td>Which of the following products have your purchased in the last 2 months. Please check all that apply</td>
+          </tr>
+          <tr>
+              <td>
+                  <label><br>
+                      <input type="checkbox" name="product1" value="Product1">
+                      Product 1<br>
+                      <input type="checkbox" name="product2" value="product2">
+                      Product 2<br>
+                      <input type="checkbox" name="product3" value="product3">
+                      Product 3<br>
+                  </label><br>
+              </td>
+          </tr>
+      </form>
+      <form>
+          <tr>
+              <td>How often would you use our new product?</td>
+          </tr>
+          <tr>
+              <td>
+                  <label><br>
+                      <input type="radio" name="daily" value="daily">
+                      Daily <br>
+                      <input type="radio" name="weekly" value="weekly">
+                      Weekly <br>
+                      <input type="radio" name="monthly" value="monthly">
+                      Monthly <br>
+                  </label><br>
+              </td>
+          </tr>
+          <tr>
+              <td>What would you pay for the new product?</td><br>
+          </tr>
+          <tr>
+              <td>
+                  $
+                  <label><input type="text"></label>
+              </td>
+              <td>.<label><input type="text"></label></td>
+              <pre>Dollar                      Cents</pre>
+          </tr><br>
+          <tr>
+              <td>What features would you likes to sea in the new product.</td>
+          </tr>
+          <tr>
+              <td>
+                  <label><textarea cols="200" rows="10"></textarea> </label>
+              </td><br>
+          </tr>
+      </form>
+      Plese rate your level of agreement with the following statements. <br>
+          <table>
+              <tr>
+                  <th></th>
+                  <td>Strongly Disagree</td>
+                  <td>Disagree</td>
+                  <td>Agree</td>
+                  <td>Strongly Agree</td>
+              </tr>
+              <tr>
+                  <th>Our products are priced fairly</th>
+                  <td><label><input type="radio"></label><br>1</td>
+                  <td><label><input type="radio"></label><br>2</td>
+                  <td><label><input type="radio"></label><br>3</td>
+                  <td><label><input type="radio"></label><br>4</td>
+              </tr>
+              <tr>
+                  <th>Our products are high quality</th>
+                  <td><label><input type="radio"></label><br>1</td>
+                  <td><label><input type="radio"></label><br>2</td>
+                  <td><label><input type="radio"></label><br>3</td>
+                  <td><label><input type="radio"></label><br>4</td>
+              </tr>
+              <tr>
+                  <th>You woukd recommend our product to a friend or coworker</th>
+                  <td><label><input type="radio"></label><br>1</td>
+                  <td><label><input type="radio"></label><br>2</td>
+                  <td><label><input type="radio"></label><br>3</td>
+                  <td><label><input type="radio"></label><br>4</td>
+              </tr>
+          </table>
+          <button>submit</button>
+
+
+</body>
+</html>
