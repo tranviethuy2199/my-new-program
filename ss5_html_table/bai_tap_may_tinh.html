@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập máy tính</title>
+    <style>
+        div {
+            text-align: center;
+        }
+        p {text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+ <h1><strong>Caculator</strong></h1>
+ <table style="margin: auto">
+     <tr>
+        <th>
+            <input type="text" id="A">
+        </th>
+         <th>
+             <input type="text" id="B">
+         </th>
+     </tr>
+ </table><br>
+ <div>
+        <button onclick="phepTinh('cong')">Addition(+)</button>
+        <button onclick="phepTinh('tru')">Subtraction(-)</button>
+        <button onclick="phepTinh('nhan')">Multiplication</button>
+        <button onclick="phepTinh('chia')" is>Division</button>
+ </div>
+</body>
+<script>
+ function phepTinh(value) {
+    let number1 = document.getElementById("A").value;
+    let number2 = document.getElementById("B").value;
+    number1 = parseInt(number1);
+    number2 = parseInt(number2);
+        if (value=='cong'){
+                alert(number1+number2);}
+        if (value=='tru'){
+                 alert(number1-number2);}
+        if (value=='nhan'){
+                alert(number1*number2);}
+        if (value=='chia'){
+                alert(number1/number2);}
+}
+
+</script>
+</html>
