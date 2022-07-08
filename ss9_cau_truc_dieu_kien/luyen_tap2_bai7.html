@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a= +prompt('nhập một số')
+    let b= +prompt('nhập một số')
+    let c= +prompt('nhập một số')
+    let tamGiac=((b*b)-4*a*c);
+    let canHai=Math.sqrt(tamGiac)
+    if (tamGiac<0){
+        alert('phương trình vô nghiệm')
+    }else if (tamGiac=0){
+        alert('phương trình có nghiệm kép'+ (-b/2*a))
+    }else if (a>0){
+        alert('phương trình có hai nghiệm'+ (-b+canHai)/2*a && ((-b-canHai)/2*a))
+    }
+</script>
+</body>
+</html>

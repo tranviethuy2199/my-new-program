@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a= +prompt('cạnh của tam giác ')
+    let b= +prompt('cạnh bên của tam giác')
+    let c= +prompt('cạnh sau của tam giác ')
+        if (a>0 && b>0 && c>0) {
+            alert('thỏa')
+        }else if (a<0 || b<0 || c<0){
+            alert('nhập lại')
+        } else if (a+b>0){
+            alert('thỏa')
+        }else if (b+c>a){
+            alert('thỏa')
+        }else if (a+c>b){
+            alert('thỏa')
+        }else {
+            alert('nhap lại')
+        }
+        document.write('3 cạnh của tam giác'+ a + b + c)
+</script>
+</body>
+</html>

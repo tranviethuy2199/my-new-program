@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>this is text</title>
+</head>
+<body>
+
+<!--<script>
+    let a = +prompt('number')
+    let b =+prompt('number')
+    if (a % b ===0){
+        alert('pass')
+    }else {
+        alert('fail')
+    }
+</script>-->
+<!--<script>
+       let a= +prompt('your age')
+       if (a >= 15) {
+           alert('đủ điều kiện nhập học')
+       }else {
+           alert('chưa đủ tuổi')
+       }
+   </script>-->
+<!-- <script>
+        let a= +prompt('nhập một số')
+        if (a > 0){
+            alert('sô lớn hơn 0')
+        }else{
+            alert('số nhỏ hơn 0')
+        }
+    </script>-->
+<!--<script>
+        let a= +prompt('nhập một số');
+        let b= +prompt('nhập một số');
+        let c= + prompt('nhập một số');
+        if (a>b && a>c){
+            alert(a +'số lớn nhất')
+        }else if (b>a && b>c){
+            alert(b +'số lớn nhất')
+        }else if (c>a && c>b){
+            alert(c +'số lớn nhất')
+        }
+    </script>-->
+<!-- <h1>Xếp hạng học lực</h1>
+    <table>
+        <tr>
+            <td>Điểm bài kiểm tra</td>
+            <td><input type="text" id="point"></td>
+        </tr>
+        <tr>
+            <td>Điểm kiểm tra giữ kì</td>
+            <td><input type="text" id="point1"></td>
+        </tr>
+        <tr>
+            <td>Điểm kiểm tra cuối kì</td>
+            <td><input type="text" id="point3"></td>
+        </tr>
+    </table>
+    <button onclick="check()">Kiểm tra</button>
+    <p id="result">học kì này bạn là</p>
+    <script>
+        function check() {
+            let point= parseFloat(document.getElementById('point') .value);
+            let point1= parseFloat( document.getElementById('point1').value );
+            let point3= parseFloat(document.getElementById('point3').value);
+            let total =(point + point1 + point3 )/3;
+            let result =" ";
+                if (total < 5)
+                    result="học sinh trung bình"
+                else if (total < 8)
+                    result = " học sinh khá"
+                else if (total < 10)
+                    result = "học sinh gioi "
+                    document.getElementById('result').innerHTML= "<p>"+ result
+        }
+    </script>-->
+<!-- <script>
+    let a = +prompt('doanh thu')
+    let b = '0.05';
+    if (a > 100){
+        alert('service charge'+a*b)
+    }
+
+</script>-->
+ <script>
+    let d =+prompt('minute')
+    let e= 3000
+    if (d<=60){
+        alert('cuoc phi thang'+ d*e  )
+    }else if (d>60){
+        alert('qua gio quy dinh'+((d-60)*5000+(60*e)))
+    }
+</script>
+</body>
+</html>

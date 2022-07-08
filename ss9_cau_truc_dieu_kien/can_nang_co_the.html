@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cân nặng cơ thể</title>
+</head>
+<body>
+<h1>Tính chỉ số cân nặng</h1>
+<table>
+    <tr>
+        <td>Nhập cân nặng :(kg)</td>
+        <td><input type="text" id="weight" style="width: 100px"></td>
+    </tr>
+    <tr>
+        <td>Nhập chiều cao :(m)</td>
+        <td><input type="text" id="height" style="width: 100px"></td>
+    </tr>
+</table>
+<button onclick="check()">Kiểm tra</button>
+<p id='result'></p>
+<script>
+    function check() {
+        let weight = document.getElementById('weight').value;
+        let height = document.getElementById('height').value;
+        let bmi = weight / (height ^ 2)
+        let result = " ";
+        if (bmi < 18)
+            result = "bạn quá gầy"
+        else if (bmi < 25)
+            result = "dáng bạn so deep"
+        else if (bmi < 30)
+            result = "bạn thật mủm mỉm"
+        else
+            result = "hãy giữ dáng"
+        document.getElementById('result').innerHTML = "chỉ số BMI" + result + "của bạn"
+    }
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learn 2</title>
+</head>
+<body>
+<!--<script>
+    let c= +prompt('temperature');
+    let f= c * 1.8 + 32 ;
+
+    document.write('F =' +f)
+</script>-->
+<!--<script>
+    let m= +prompt('met')
+    let ft= m*3.2808
+    document.write('feet ='+ ft)
+</script>-->
+<!--<script>
+    let c= +prompt('nhap canh')
+    let s= c*c
+    document.write('dien tich hinh vuong '+ s)
+</script>-->
+<!--<script>
+    let e= +prompt('chieu dai');
+    let s= +prompt('chieu rong');
+    let dientich=e*s;
+    if (e<0) {
+        alert('sai')
+    }else{
+        alert('dien tich la' + dientich)
+    }
+    document.write('dien tich hinh chu nhat la'+ dientich)
+</script>-->
+<!--<script>
+    let g= +prompt('nhap canh cua tam giac');
+    let h= +prompt('chieu cao');
+    let s= g*h;
+    if (g>0){
+        alert('dien tich la' + s)
+    }else {
+        alert('nhap lai')
+    }
+</script>-->
+<!--<h1>giải phương trình bậc một</h1>
+<h2>nhập các tham số của phương trình ax + b = 0</h2>
+<table>
+    <tr>
+        <td>a=</td>
+        <td><input type="text" id="number"></td>
+    </tr>
+    <tr>
+        <td>b=</td>
+        <td><input type="text" id="number2"></td>
+        <button type="button" onclick="check()">Kiểm tra</button>
+        <p id="tong">kết quả là</p>
+    </tr>
+</table>
+    <script>
+        function check() {
+            let number= parseFloat(document.getElementById('number').value );
+            let number2= parseFloat(document.getElementById('number2').value );
+            let x= (-number2/number);
+                if (number===0 && number2===0){
+                      document.getElementById("tong").innerHTML = "Phương trình vô số nghiệm"
+        }else if(number === 0){
+                        document.getElementById("tong").innerHTML = "Phương trình vô nghiệm";
+        }else {
+                    document.getElementById("tong").innerHTML = 'phương trình có duy nghiệm duy nhất' + x;
+                }}
+    </script>-->
+<!--<script>
+    let a= +prompt('nhập một số')
+    let b= +prompt('nhập một số')
+    let c= +prompt('nhập một số')
+    let tamGiac=((b*b)-4*a*c);
+    let canHai=Math.sqrt(tamGiac)
+    if (tamGiac<0){
+        alert('phương trình vô nghiệm')
+    }else if (tamGiac=0){
+        alert('phương trình có nghiệm kép'+ (-b/2*a))
+    }else if (a>0){
+        alert('phương trình có hai nghiệm'+ (-b+canHai)/2*a && ((-b-canHai)/2*a))
+    }
+
+
+
+</script>-->
+<!--<script>
+    let a=+prompt('your age');
+        if (a<0){
+            alert('nhập lại')
+        }else if(a<=20){
+            alert('buffalo young')
+        }else if (a<=35){
+            alert('trưởng thành boy')
+        }else if (a>35){
+            alert('good boy')
+        }
+        document.write('your age' + a)
+</script>-->
+<!--<script>
+    let a= +prompt('cạnh của tam giác ')
+    let b= +prompt('cạnh bên của tam giác')
+    let c= +prompt('cạnh sau của tam giác ')
+        if (a>0 && b>0 && c>0) {
+            alert('thỏa')
+        }else if (a<0 || b<0 || c<0){
+            alert('nhập lại')
+        } else if (a+b>0){
+            alert('thỏa')
+        }else if (b+c>a){
+            alert('thỏa')
+        }else if (a+c>b){
+            alert('thỏa')
+        }else {
+            alert('nhap lại')
+        }
+        document.write('3 cạnh của tam giác'+ a + b + c)
+</script>-->
+<!--<script>
+    let soDien =+prompt('nhap so dien')
+    let giaTien= 3000
+    if (soDien<=60){
+        alert('cuoc phi thang'+ soDien*giaTien )
+    }else if (soDien>60){
+        alert('qua gio quy dinh'+((soDien-60)*5000+(60*giaTien)))
+    }
+</script>-->
+<!--<script>
+    let h= +prompt('thu nhap');
+    let j= +prompt('phần trăm');
+    let k= h*j ;
+    document.write('thuế thu nhap cá nhân' + k )
+</script>-->
+<!--<script>
+    let t= +prompt('số tiền vay');
+    let n= parseFloat(prompt('lãi suất'));
+    let year=+prompt('số năm gửi');
+    let laiSuat=t*((1+n)*Math.pow(year,2))
+    document.write('lãi' + laiSuat )
+
+</script>-->
+</body>
+</html>

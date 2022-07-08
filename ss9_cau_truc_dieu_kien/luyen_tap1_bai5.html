@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Xếp hạng học lực</h1>
+<table>
+    <tr>
+        <td>Điểm bài kiểm tra</td>
+        <td><input type="text" id="point"></td>
+    </tr>
+    <tr>
+        <td>Điểm kiểm tra giữ kì</td>
+        <td><input type="text" id="point1"></td>
+    </tr>
+    <tr>
+        <td>Điểm kiểm tra cuối kì</td>
+        <td><input type="text" id="point3"></td>
+    </tr>
+</table>
+<button onclick="check()">Kiểm tra</button>
+<p id="result">học kì này bạn là</p>
+<script>
+    function check() {
+        let point= parseFloat(document.getElementById('point') .value);
+        let point1= parseFloat( document.getElementById('point1').value );
+        let point3= parseFloat(document.getElementById('point3').value);
+        let total =(point + point1 + point3 )/3;
+        let result =" ";
+        if (total < 5)
+            result="học sinh trung bình"
+        else if (total < 8)
+            result = " học sinh khá"
+        else if (total < 10)
+            result = "học sinh gioi "
+        document.getElementById('result').innerHTML= "<p>"+ result
+    }
+</script>
+</body>
+</html>
