@@ -9,7 +9,7 @@
     let t= +prompt('số tiền vay');
     let n= parseFloat(prompt('lãi suất'));
     let year=+prompt('số năm gửi');
-    let laiSuat=t*((1+n)*Math.pow(year,2))
+    let laiSuat=t*Math.pow((1+n),year)
     document.write('lãi' + laiSuat )
 </script>
 </body>
