@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let amount = 30;
+
+    // vẽ phần đầu
+    for(let i = 1; i <amount ; i++) {
+        for(let j = 1; j <= amount; j++) {
+            if(i ==0 ) {
+                document.write('*')
+            } else {
+                if(j == 1 || j == amount || j == (amount/2 +1) || j == amount/2) {
+                    document.write('&nbsp&nbsp')
+                } else {
+                    document.write('*')
+                }
+            }
+        }
+        document.write('<br>')
+    }
+    // vẽ phần cuối
+    for(let i = 1; i <= amount/2; i++) {
+        for(let j = 1; j <= i * 1 - 1; j++) {
+            document.write('&nbsp&nbsp')
+        }
+        for(let j = 1; j <= (i * -2) + amount + 2; j++) {
+            document.write('*')
+        }
+        for(let j = 1; j <= i * 1 - 1; j++) {
+            document.write('&nbsp&nbsp')
+        }
+        document.write('<br>')
+    }
+
+
+
+
+</script>
+</body>
+</html>

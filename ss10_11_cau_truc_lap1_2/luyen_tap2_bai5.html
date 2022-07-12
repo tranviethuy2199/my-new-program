@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <label><input type="text" id="a"> tiền vay</label><br>
+    <label><input type="text" id="b">lãi suất</label><br>
+    <label><input type="text" id="year">năm gửi</label>
+    <button onclick="check()">kiểm tra</button>
+    <p id="result"></p>
+</div>
+<script>
+    function check() {
+        let a = parseFloat(document.getElementById("a").value);
+        let b = parseFloat(document.getElementById("b").value);
+        let year = parseFloat(document.getElementById("year").value);
+        let result;
+            result = a * (1 +year* b);
+        document.getElementById("result").innerHTML = "so lai" + result + "vnd"
+    }
+</script>
+</body>
+</html>

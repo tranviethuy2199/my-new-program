@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number1 = 0, number2 = 1, fibonacci;
+        while(true) {
+            fibonacci = number1 + number2
+            if (fibonacci % 5 == 0) {
+                alert('số fibonacci đầu tiên chia hết cho 5 là:  ' + fibonacci)
+                break;
+            } else {
+                number1 = number2;
+                number2 = fibonacci;
+            }
+        }
+</script>
+</body>
+</html>

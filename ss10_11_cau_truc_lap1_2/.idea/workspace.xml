@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="41901b4a-f385-4e6b-babb-a8d8208d8e3f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/bang_cuu_chuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/nhap_code_cau_truc_lap_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss10/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss10/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/asd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/bai_tap_may_tinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/bai_tap_may_tinh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/luyen_tap1_bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/luyen_tap1_bai2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/luyen_tap2_bai12.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/luyen_tap2_bai12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/su_kien_ban_phim.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/su_kien_ban_phim.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/ãzczcx.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2BZPRiWxMC5hXaPqmdY4O0UTZg5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/luyen_tap2_bai5.html" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" path="$PROJECT_DIR$/kiem_tra_nam_nhuan.html">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" uri="http://localhost:63342/ss10_cau_truc_lap1_2/luyen_tap2_bai5.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41901b4a-f385-4e6b-babb-a8d8208d8e3f" name="Default Changelist" comment="" />
+      <created>1657110627319</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657110627319</updated>
+      <workItem from="1657110628547" duration="5004000" />
+      <workItem from="1657273445174" duration="5000" />
+      <workItem from="1657539539853" duration="9033000" />
+      <workItem from="1657593599852" duration="13678000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="576" y="201" key="#Web_Browsers" timestamp="1657113025419">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="576" y="201" key="#Web_Browsers/0.0.1536.824@0.0.1536.824" timestamp="1657113025419" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1657609589444">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1657609589444" />
+    <state x="548" y="153" key="FileChooserDialogImpl" timestamp="1657609518133">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="548" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1657609518133" />
+  </component>
+</project>

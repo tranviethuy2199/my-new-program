@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt('Nhập vào số lượng số nguyên tố đầu tiên: ');
+    let index = 1;
+    let primeNumber = 2;
+    let source = '';
+    while(index <= n) {
+        if(isPrimeNumber(primeNumber)) {
+            source += primeNumber
+            index ++;
+            document.write(source);
+        }
+        primeNumber ++;
+    }
+    function isPrimeNumber(number) {
+        if(number < 1){
+            return false
+        }
+        else {
+            let count = 1;
+            for(let i = 2; i <= number; i++) {
+                if(number % i == 0) {
+                    count ++;
+                }
+                if(count > 2)
+                    return false
+            }
+            return true
+        }
+    }
+
+</script>
+</body>
+</html>

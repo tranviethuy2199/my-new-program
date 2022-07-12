@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let hight = +prompt('nhap gia tri');
+    for (let i = 1; i <= hight; i++) {
+        for (let j = 1; j <= hight ; j++) {
+            if (i == 1 || i == hight) {
+                document.write('*')
+            } else if (j == 1 || j == hight ) {
+                document.write('*')
+            } else {
+                document.write('&nbsp&nbsp')
+            }
+        }
+        document.write('<br>')
+    }
+</script>
+
+
+
+</body>
+</html>
