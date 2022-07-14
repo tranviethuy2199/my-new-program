@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+        // Viết một chương trình khai báo một mảng ký tự và kích thước của mảng.
+        // Chương trình này đếm số ký tự số trong mảng.
+    let world=['l','o','v','e','y','o','u','3','0','0','0'];
+    let kiTu=0;
+    document.write(world + "<br>");
+    document.write("kich thuoc cua mang la :" + world.length + '<br>');
+        for (let i = 0; i <world.length ; i++) {
+            if (!isNaN(world[i])){
+                kiTu+=1;
+            }
+        }
+        document.write("ky tu so trong mang :" + kiTu );
+</script>
+</body>
+</html>

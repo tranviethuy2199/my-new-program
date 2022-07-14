@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // - Viết chương trình đếm số nguyên âm trong một chuỗi
+    let number;
+    let soNguyen=[];
+    for (let i = 0; i <10 ; i++) {
+        number=Math.floor(Math.random()*(100+100)-100) ;
+        soNguyen.push(number);
+    }document.write("10 phan tu la " + soNguyen)
+    document.write("<br>")
+    for (let number of soNguyen){
+        if (number<0){
+            document.write(number + "<br>")
+        }
+    }
+</script>
+</body>
+</html>

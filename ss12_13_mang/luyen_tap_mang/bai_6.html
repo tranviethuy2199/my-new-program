@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử
+    // nhập/tạo phần tử số nguyên V----Chương trình tìm xem V có nằm trong mảng số nguyên không?
+    //     Nếu V thuộc mảng số nguyên thì in ra "V is in the array" còn lại in ra "V is not in the array".
+    let number=[];
+    for (let i = 0; i <10 ; i++) {
+        number.push(+prompt("nhap so nguyen"));
+        if ( number[i]>10){
+            document.write(number.toString())
+        }
+    }
+    let v=+prompt("nhap so bat ki");
+    if (number.includes(v)===true){
+        alert("is in the array")
+    }else {
+        alert("is not in the array")
+    }
+
+</script>
+</body>
+</html>

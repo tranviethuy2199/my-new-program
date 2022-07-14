@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết chương trình khởi tạo mảng 2 chiều, gồm một bộ các phần tử có sẵn,  in ra các phần tử trong mảng.
+    // Chú ý: Sử dụng vòng lặp for lồng nhau Ví dụ mảng sau:
+    //     let a = [
+    //         [1, 2, 1, 24],
+    //         [8, 11, 9, 4],
+    //         [7, 0, 7, 27],
+    //         [7, 4, 28, 14],
+    //         [3, 10, 26, 7]
+    //     ];
+    let row = +prompt();
+    let col = +prompt();
+    let array=[];
+    for (let i = 0; i <row ; i++) {
+        array[i]=[] ;
+        for (let j = 0; j <col ; j++) {
+            array[i][j]= +prompt()
+        }
+    }
+    for (let i = 0; i <array.length ; i++) {
+        for (let j = 0; j <array[i].length; j++) {
+            document.write(array[i][j]+ "")
+        }
+        document.write("<br>")
+    }
+
+</script>
+</body>
+</html>
