@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+    function giaiThua() {
+        let a = +prompt();
+        let b = 1;
+        for (let i = 0; i < a; i++) {
+            for (let j = 0; j <= a; j++) {
+                b *= a;
+                a--
+            }
+        }
+        document.write(b)
+    }
+    giaiThua()
+
+
+</script>
+</body>
+</html>

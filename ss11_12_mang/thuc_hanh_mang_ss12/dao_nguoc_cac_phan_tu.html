@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = [-3, 5, 1, 3, 2, 10];
+    let first = 0;
+    let last = x.length -1 ;
+    while (first < last) {
+        let b = x[first];
+        x[first] = x[last];
+        x[last] = b;
+        first++;
+        last--;
+    } document.write(x+ "<br>")
+</script>
+
+<!--//  document.write(x);-->
+<!--// let a= prompt("nhap so")-->
+<!--// let number=["1","2","5","3","4"];-->
+<!--// for (let i = 0; i <number.length ; i++) {-->
+<!--//     if (a=number[i])-->
+<!--//     alert("vi tri cua" + a + "la" + i )-->
+<!--// }--><!--// let fruit=["apple","lemon","banana"]-->
+<!--// document.write(fruit.sort() + "<br>" )-->
+<!--// document.write(fruit.reverse())-->
+<!--//  let number=["1","2","5","3","4"];-->
+<!--//  document.write(number.sort() + "<br>")-->
+</body>
+</html>

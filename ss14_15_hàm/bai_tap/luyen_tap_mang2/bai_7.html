@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
+    // function change() {
+    //     let soNguyen=[parseInt(prompt("nhap 2 so bat ki")),prompt()];
+    //     document.write(soNguyen);
+    //     document.write("<br>");
+    //     document.write(soNguyen.reverse() + "<br>");
+    //
+    // }
+    // change()
+    function reverseArray(arrValue) {
+        let result = [];
+        for(let item of arrValue) {
+            result.unshift(item);
+        }
+        return result;
+    }
+    // demo
+    let numbersRandomList = [1, 2, 4, 6, 9];
+    console.log(numbersRandomList);
+    let numberRandomListReverse = reverseArray(numbersRandomList);
+    console.log(numberRandomListReverse);
+</script>
+</body>
+</html>

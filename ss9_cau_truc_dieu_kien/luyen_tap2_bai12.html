@@ -5,12 +5,29 @@
     <title>Title</title>
 </head>
 <body>
-<script>
+<!--<script>
     let t= +prompt('số tiền vay');
     let n= parseFloat(prompt('lãi suất'));
     let year=+prompt('số năm gửi');
-    let laiSuat=t*Math.pow((1+n),year)
-    document.write('lãi' + laiSuat )
+    let laiSuat;
+    for (let i = 0; i < year ; i++) {
+         laiSuat=t*Math.pow((1+n),year)
+            year++;
+
+        document.write('lãi' + laiSuat )
+    }
+</script>-->
+<script>
+    let points = [40, 100, 1, 5, 25, 10]
+    points.sort(function(a, b) {
+        return a - b
+    })
+    document.write(points + "<br>");
+
+    points.sort(function(a, b) {
+        return b - a
+    })
+    document.write(points);
 </script>
 </body>
 </html>

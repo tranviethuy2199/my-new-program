@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ung dung quan li san pham </title>
+    <style>
+        form {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h1>ung dung quan li san pham</h1>
+
+<label>New prodduct<input type="text" id="shoHin"></label>
+<button onclick="add()">Add</button>
+<br>
+<label>Edit product you want <input type="text" id="hangHoa"></label><br>
+<label>Input product<input type="text" id="hangHoa1"></label>
+<button onclick="edit()">Edit</button>
+<br>
+<label>Delete<input type="text" id="hangHoa2"></label>
+<button onclick="xoa()">Delete</button>
+<p id="txt"></p>
+
+<script>
+    // let product =  ["BMW","TOYOTA","MAZDA","HUYNHDAI","LEXUS","NISSAN"];
+    // function hienThi(product) {
+    //     let car = "" ;
+    //     for (let i = 0; i <product.length ; i++) {
+    //         car=car + (i+1) + product[i] + "<br>";
+    //     }
+    //     return car ;
+    // }
+    // function add(product) {
+    //     let newProduct= prompt(" nhap mat hang moi");
+    //     product.push(newProduct);
+    //     document.getElementById("txt").innerHTML=hienThi(product);
+    // }
+    // function edit(product) {
+    //     let hangHoa = prompt("nhap mat hang muon xoa");
+    //     let newProduct = prompt(" nhap mat hang moi ");
+    //     product[hangHoa-1]=newProduct;
+    //     document.getElementById("txt").innerHTML=hienThi(product);
+    // }
+    // function xoa(product) {
+    //     let hangHoa2 = prompt("nhap mat hang muon xoa ");
+    //     product.splice(hangHoa2-1,1);
+    //     document.getElementById("txt").innerHTML=hienThi(product);
+    // }
+    // document.getElementById("txt").innerHTML=hienThi(product)
+
+
+</script>
+<script>
+    let products = ["BMW", "TOYOTA", "MAZDA", "HUYNHDAI", "LEXUS", "NISSAN"];
+    function hienThi(product) {
+        let car = "";
+        for (let i = 0; i < product.length; i++) {
+            document.getElementById("txt").innerHTML +=  + (i + 1) + product[i] + "<br>";
+        }
+    }
+    hienThi(products);
+
+    function add() {
+        let shoHin = document.getElementById("shoHin").value;
+        products.push(shoHin);
+        document.getElementById("txt").innerHTML = ''
+                    hienThi(products)
+    }
+
+
+    function edit() {
+        let hangHoa = document.getElementById("hangHoa").value;
+        let hangHoa1 = document.getElementById("hangHoa1").value;
+        products[hangHoa - 1] = hangHoa1;
+        document.getElementById("txt").innerHTML = ''
+        hienThi(products);
+    }
+
+    function xoa() {
+        let hangHoa2 = document.getElementById("hangHoa2").value;
+        products.splice(hangHoa2 - 1, 1);
+        document.getElementById("txt").innerHTML = ''
+        hienThi(products);
+    }
+
+</script>
+
+</body>
+</html>

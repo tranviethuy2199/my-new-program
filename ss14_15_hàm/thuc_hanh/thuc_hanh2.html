@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input type="number" id="nhapNhietdo" oninput="temp(this.value)"></label>
+<p>DO C : <span id="output"></span></p>
+<script>
+    function temp(c) {
+        c=parseFloat(c);
+        document.getElementById("output").innerHTML=(c-32)/1.8;
+    }
+
+</script>
+</body>
+</html>

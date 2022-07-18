@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>JS Bin</title>
+<!--    <style>-->
+<!--        body {padding-top:50px}-->
+<!--    </style>-->
+</head>
+
+<body>
+<script>
+    // let colors = ['red', 'green', 'blue'];
+    //
+    // for (let i in colors) {
+    //     console.log(i); // "0", "1", "2"
+    // }
+    //
+    // for (let i of colors) {
+    //     console.log(i); // "red", "green", "blue"
+    // }
+    // let number=[1,6,4,6,8,7]
+    // number.push(9);
+    // console.log(number)
+    // let studens=[];
+    // let studen={
+    //     id : 1,
+    //     name:" huy",
+    //     address: "danang"
+    // }
+    // studens.push(studen);
+    // console.log(studens)
+    let animal=[
+        {
+            id : 1,
+            name: "dog",
+
+        },
+        {
+            id: 2 ,
+            name: "cat",
+        }
+    ]
+    let newAnimal=animal.map(function (animal) {
+        if (animal.id==1){
+            animal.name="mouse";
+        }
+        return animal;
+
+    });
+    console.log(newAnimal)
+</script>
+</body>
+</html>

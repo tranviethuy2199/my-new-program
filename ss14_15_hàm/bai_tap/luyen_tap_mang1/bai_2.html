@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="checkNumber()">check number</button>
+<script>
+    // Tạo hàm nhận vào một đối số dạng số, tăng giá trị đối số đó lên 1 và trả lại giá trị cho lời gọi hàm.
+    // Gọi hàm từ trong phần <body> của trang web và hiển thị kết quả lên màn hình.
+    function checkNumber() {
+        let number = parseFloat(prompt("input number"));
+        //sau khi nhập giá trị của một số , dùng ++number để tăng giá trị của nó lên
+        alert(++number)
+        document.write(number.toString())
+    }
+</script>
+</body>
+</html>

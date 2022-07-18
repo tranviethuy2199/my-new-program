@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5_vong_lap_1</title>
+</head>
+<body>
+<!-- Tính tổng của 20 số đầu tiên trong dãy fibonacci. -->
+<script>
+    let number1 = 0;
+    let number2 = 1;
+    let numberTong;
+    let sum = 0;
+    for (let i = 0; i < 20; i++) {
+        document.write(number1 + '<br>');
+        numberTong = number1 + number2;
+        document.write( "Tổng là : " + sum + '<br>');
+        number1 = number2;
+        number2 = numberTong;
+        sum += numberTong;
+    }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

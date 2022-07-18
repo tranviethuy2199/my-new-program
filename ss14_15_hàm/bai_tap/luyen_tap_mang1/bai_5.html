@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="findStar()">find Star</button>
+<script>
+
+    function findStar() {
+        let star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let chomSao = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa", " Major"];
+        let find = prompt() ;
+        // gọi hàm findIndexOfByStar = star.indexOf(find) để bắt phần tử trong star và trả về chính nó
+        let findIndexOfByStar = star.indexOf(find);
+        // cho điều kiện nếu phần tử nhập vào không đúng (-1 (trong bài index.of)) sẽ trả về alert ;
+        if (findIndexOfByStar > -1){
+            alert(chomSao[findIndexOfByStar]);
+        }else {
+            alert("khong tim thay")
+        }
+    }
+
+
+</script>
+<script>
+    // let a="i love you 3000";
+    // let b='I love you 1500';
+    // let c;
+    // document.write(a + "<br>")
+    // document.write(b)
+    // if (a===b){
+    //     for (let i = 0; i <b.length ; i++) {
+    //         if (a[i]!==b[i]){
+    //             c= "false ";
+    //             break;
+    //         }else {
+    //             c="true";
+    //         }
+    //     }
+    //     document.write(c);
+    // }else {
+    //     document.write("false")
+    // }
+</script>
+</body>
+</html>
