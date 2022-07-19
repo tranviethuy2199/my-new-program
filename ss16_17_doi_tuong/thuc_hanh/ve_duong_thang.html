@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML5 canvas tag.</canvas>
+<script>
+    let c = document.getElementById("myCanvas");
+    // .getContext vẽ theo hình thức ...()
+    let ctx = c.getContext("2d");
+    ctx.beginPath();
+    // 100 là độ rộng width
+    // 50 là đội dài height
+    // 0 là điểm  bắtđầu vẽ
+    ctx.arc(100, 50, 30, 0, 2*Math.PI);
+    // đổ màu
+    ctx.fillStyle = "red"
+    ctx.fill();
+</script>
+</body>
+</html>

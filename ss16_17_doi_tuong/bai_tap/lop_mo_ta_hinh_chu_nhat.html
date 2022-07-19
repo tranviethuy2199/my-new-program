@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100" style=""></canvas>
+<script>
+    // Viết một lớp các đối tượng hình chữ nhật lấy tên là Rectangle, mỗi hình chữ nhật đều có những đặc tính sau:
+    //     + Có thông số chiều dài (int).
+    // + Có thông số chiều rộng (int).
+    // + Có tính năng tính diện tích.
+    // + Có tính năng tính chu vi.
+    // + Có tính năng hiển thị trực quan hình chữ nhật bằng cách vẽ lên canvas
+    class retangle {
+        constructor(longs, width) {
+            this.longs = longs;
+            this.width = width;
+
+
+            // thiết đặt lại và truyền vào tham số cho hình chữ nhật
+            this.setLongs = function (longs) {
+                this.longs = longs;
+            }
+            this.setWidth = function (width) {
+                this.width = width;
+            }
+        }
+
+        // phép toán
+        dienTich() {
+            return this.longs * this.width;
+        }
+
+        chuVi() {
+            return 2 * (this.width + this.longs);
+        }
+        canvas (){
+            let c = document.getElementById("myCanvas");
+            let ctx = c.getContext("2d");
+            ctx.fillStyle = "red";
+            ctx.fillRect(0,0,200,100);
+
+
+        }
+
+    }
+    let index = new retangle(5,10,);
+    document.write( "diện tích là : " + index.dienTich() + " - ");
+    document.write( "chu vi là :"  + index.chuVi() + "<br>");
+   index.canvas() ;
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let date = function (day, month, year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
+        // phương thức trả các giá trị trong hàm về
+        this.getDay = function () {
+            return this.day;
+        }
+        this.getMonth = function () {
+            return this.month;
+        }
+        this.getYear = function () {
+            return this.year;
+        }
+        //phương thức thiết đặt lại các giá trị và truyền vào cho nó tham số mới để truy cập vào nó
+        this.setDay = function (day) {
+            this.day = day;
+        }
+        this.setMonth = function (month) {
+            this.month = month;
+        }
+        this.setYear = function (year) {
+            this.year = year;
+        }
+        this.showInfor = function () {
+            return this.day + "/" + this.month + "/" + this.year;
+
+
+        }
+    }
+    let today = new date(18, 7, 2022);
+    console.log(today.showInfor())
+    // hiển thị ngày tháng năm
+    // let day = today.getDay();
+    // let month = today.getMonth();
+    // let year = today.getYear();
+    // alert(day + "/" + month + "/" + year)
+
+</script>
+</body>
+</html>

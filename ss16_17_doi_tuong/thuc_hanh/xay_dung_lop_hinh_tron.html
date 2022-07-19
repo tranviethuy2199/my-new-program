@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // class circle =  function (r) {
+    //     this.r = r;
+    //     // dùng phương thức return trả r về lại
+    //     this.getR= function () {
+    //         return r
+    //     }
+    //     this.getDienTich= function () {
+    //         return  Math.PI * r * r
+    //     }
+    // }
+    // let banKinh = new circle(5);
+    // let r = banKinh.getR();
+    // let dienTich = banKinh.getDienTich();
+    // alert("bán kính" + r + "có diện tích là " + dienTich)
+    class circle {
+        constructor(banKinh, color) {
+            this.banKinh = banKinh;
+            this.color = color;
+        }
+
+        // trả lại giá trị của bán kính
+        getBanKinh(){
+            return this.banKinh;
+        }
+
+        // thuật toán
+        dienTich() {
+            return Math.PI * this.banKinh * this.banKinh;
+        }
+        chuVi(){
+            return 2 * this.banKinh *  Math.PI;
+        }
+    }
+    let c1 = new circle(5);
+    console.log(c1.chuVi())
+
+
+</script>
+</body>
+</html>
