@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // class human chứa các thuộc tính
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setName() {
+            return this.name;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        setWeight() {
+            return this.weight;
+        }
+
+        showInfor() {
+            return this.name + " " + this.gender + " " + this.weight
+        }
+
+        say(talk) {
+            console.log(talk);
+        }
+
+        eat(apple) {
+            if (apple.getWeight() > 0) {
+                apple.decreaseApple();
+                this.weight++;
+            } else {
+                alert(" het tao")
+            }
+
+        }
+    }
+
+    // class apple có cân nặng
+    class Apple {
+        constructor(weight) {
+            this.weight = weight;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        isEmpty() {
+            if (this.weight <= 0) {
+                return true
+            } else {
+                return false
+            }
+        }
+
+        decreaseApple() {
+            if (this.isEmpty()) {
+                return " hết táo "
+            } else {
+                return this.weight--
+            }
+        }
+
+    }
+
+    adam = new Human("adam", "male", 70);
+    evan = new Human("evan", "female", 45)
+    let tao = new Apple(10)
+    // console.log(adam.showInfor());
+    // console.log(evan.showInfor());
+    // console.log(tao.weight)
+    // console.log(adam.say(" hi eva"))
+    // console.log(adam.eat(tao))
+    // console.log(tao)
+    document.write()
+
+</script>
+</body>
+</html>

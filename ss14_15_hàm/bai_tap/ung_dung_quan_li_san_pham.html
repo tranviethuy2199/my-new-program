@@ -54,19 +54,21 @@
 </script>
 <script>
     let products = ["BMW", "TOYOTA", "MAZDA", "HUYNHDAI", "LEXUS", "NISSAN"];
+
     function hienThi(product) {
         let car = "";
         for (let i = 0; i < product.length; i++) {
-            document.getElementById("txt").innerHTML +=  + (i + 1) + product[i] + "<br>";
+            document.getElementById("txt").innerHTML += +(i + 1) + product[i] + "<br>";
         }
     }
+
     hienThi(products);
 
     function add() {
         let shoHin = document.getElementById("shoHin").value;
         products.push(shoHin);
         document.getElementById("txt").innerHTML = ''
-                    hienThi(products)
+        hienThi(products)
     }
 
 
