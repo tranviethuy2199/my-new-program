@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [1, 2, 5, 4, 5, 6];
+    let b = [];
+    /**
+     * tao 1 ham co 2 tham so
+     *  tinh gia tri tung phan tu cua b
+     *  param1: 1 mang
+     *  param3 index
+     */
+        // function sum(arr,index) {       // tạo hàm chứa mảng và giá trị
+        //     let result = 0 ;            // vì là tính tổng nên bắt đầu từ không
+        //       for (let i = 0; i <= index ; i++) {
+        //           result += arr[i]                     // tính tổng trong mảng a
+        //       }
+        //   }
+        //   for (let i = 0; i <a.length ; i++) {
+        //       let mangB = sum( a , i )        // cho mangB bằng hàm chứa phép tính đã có ở trên
+        //       b.push(mangB)                   // push vào mảng b
+        //   }
+        //   console.log(b)
+    let sum = 0;
+    for (let i = 0; i < a.length; i++) {
+        sum += a[i];
+        b[i] = sum;
+    }
+    document.write(b);
+
+</script>
+</body>
+</html>

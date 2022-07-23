@@ -35,7 +35,7 @@
         }
 
         say(talk) {
-            console.log(talk);
+            return talk;
         }
 
         eat(apple) {
@@ -86,7 +86,14 @@
     // console.log(adam.say(" hi eva"))
     // console.log(adam.eat(tao))
     // console.log(tao)
-    document.write()
+    document.write(adam.showInfor() + "<br>");
+    document.write(adam.say("would you like some apple ?") + "<br>");
+    document.write(evan.showInfor() + "<br>");
+    document.write(evan.say("thank you ") + "<br>");
+    document.write(" evan eat apple " + "<br> ");
+    evan.eat(tao);
+    document.write("số lượng táo là : " + tao.weight);
+
 
 </script>
 </body>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let h1 = +prompt("nhap chieu cao");
+    for (let i = 1; i <= h1*2 ; i+=2) {
+        for (let j = 0; j < (h1*2-i) ; j++) {
+            document.write("&nbsp")
+        }
+        for (let j = 0; j < i ; j++) {
+            document.write("*")
+        }
+        document.write("<br>")
+    }
+
+</script>
+</body>
+</html>

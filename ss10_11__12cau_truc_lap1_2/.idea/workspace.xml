@@ -20,35 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41901b4a-f385-4e6b-babb-a8d8208d8e3f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ss10/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss10_11_cau_truc_lap1_2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss10_11_cau_truc_lap1_2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss10_11_cau_truc_lap1_2/.idea/ss10.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss10_11_cau_truc_lap1_2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss10_11_cau_truc_lap1_2/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss10_11_cau_truc_lap1_2/bang_cuu_chuong.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss10_11_cau_truc_lap1_2/game_doan_so.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss10_11_cau_truc_lap1_2/hien_thi_so_nguyen_dau_tien.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss10_11_cau_truc_lap1_2/luyen_tap2_bai1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss10_11_cau_truc_lap1_2/luyen_tap2_bai2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss10_11_cau_truc_lap1_2/luyen_tap2_bai3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss10_11_cau_truc_lap1_2/luyen_tap2_bai4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss10_11_cau_truc_lap1_2/luyen_tap2_bai5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss10_11_cau_truc_lap1_2/luyen_tap2_bai6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss10_11_cau_truc_lap1_2/luyen_tap_vong_lap1_bai1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss10_11_cau_truc_lap1_2/luyen_tap_vong_lap1_bai2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss10_11_cau_truc_lap1_2/luyen_tap_vong_lap1_bai3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss10_11_cau_truc_lap1_2/luyen_tap_vong_lap1_bai4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss10_11_cau_truc_lap1_2/luyen_tap_vong_lap1_bai5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss10_11_cau_truc_lap1_2/luyen_tap_vong_lap1_bai6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss10_11_cau_truc_lap1_2/luyen_tap_vong_lap1_bai7.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss5_html_table/Wellcom to my PowerPoint.pptx" beforeDir="false" afterPath="$PROJECT_DIR$/../ss5_html_table/Wellcom to my PowerPoint.pptx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/bai_tap_may_tinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/bai_tap_may_tinh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/bang_cuu_chuong.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/bang_cuu_chuong.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/luyen_tap1_bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/luyen_tap1_bai2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/luyen_tap2_bai12.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/luyen_tap2_bai12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/nhap_code_cau_truc_lap_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/nhap_code_cau_truc_lap_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/su_kien_ban_phim.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss9_cau_truc_dieu_kien/su_kien_ban_phim.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss16_17_doi_tuong/bai_tap/adam_eva.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss16_17_doi_tuong/bai_tap/adam_eva.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +49,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ss7_html_table" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" path="$PROJECT_DIR$/kiem_tra_nam_nhuan.html">
@@ -103,6 +76,7 @@
       <workItem from="1657616896274" duration="484000" />
       <workItem from="1657941300101" duration="35000" />
       <workItem from="1657974983623" duration="1663000" />
+      <workItem from="1658328306215" duration="2366000" />
     </task>
     <servers />
   </component>

@@ -8,7 +8,6 @@
 <script>
     // Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không
     // Nếu là ký tự số hàm trả về true, ngược lại trả về false.
-    let input = parseFloat(prompt());
     function checkBango(number) {
         if (isNaN(number)){
         alert("false")
@@ -16,6 +15,7 @@
             alert("true")
         }
     }
+    let input = parseFloat(prompt());
     checkBango(input)
 
 </script>

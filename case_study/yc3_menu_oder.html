@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let price = [20,10,20,15,15,20 ]
+    let order ;
+    let pay = 0 ;
+    let soLuong ;
+    do {
+        order = +prompt(
+            "1.nước cam\n" +
+            "2.nước lọc\n" +
+            "3.cafe\n" +
+            "4.sting\n" +
+            "5.pepsi\n" +
+            "6.numberOne\n" +
+            "7.thanh toán\n"
+        )
+        if (order===7) {
+            break;
+        }
+        soLuong = +prompt("số lượng")
+        pay = pay + (soLuong*price[order-1])
+
+    }while (order < 7);
+    document.write("tổng tiền nước là : " + pay)
+
+
+
+
+
+
+
+
+
+</script>
+</html>

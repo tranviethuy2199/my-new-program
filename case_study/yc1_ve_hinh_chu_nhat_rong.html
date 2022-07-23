@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let height = parseInt(prompt("Nhập chiều dài của hình chữ nhật"));
+    let width = parseInt(prompt("Nhập chiều rộng của hình chữ nhật"));
+    for (let i = 1; i <= width; i++) {
+        for (let j = 1; j <= height; j++) {
+            if (i === 1 || i === width) {
+                document.write("*");
+            } else if (j === 1 || j === height) {
+                document.write("*");
+            } else {
+                document.write("&ensp;");
+            }
+        }
+        document.write('<br>');
+    }
+
+</script>
+</body>
+</html>

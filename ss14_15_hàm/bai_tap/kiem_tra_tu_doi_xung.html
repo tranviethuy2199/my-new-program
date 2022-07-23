@@ -7,8 +7,8 @@
 <body>
 <script>
     function isPalindrome(value) {
-        let lengthVal = value.length;
-        if(lengthVal >= 2) {
+        let lengthVal = value.length; // tìm giá trị trong chuỗi
+        if(lengthVal >= 2) {          // phải lớn hơn 2 chữ mới chạy ct
             let newWord = '';
             for(let i = lengthVal -1; i >= 0; i--) {
                 newWord += value[i];

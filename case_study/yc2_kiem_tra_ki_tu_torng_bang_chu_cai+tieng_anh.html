@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body></body>
+<script>
+    let character = prompt();
+    let word = ['o', 'u', 'i', 'a', 'e',"A","E","I","U","O"]
+    let arr = [];
+    // character.toLowerCase();
+    // switch (character) {
+    //     case "u":
+    //         alert("true");
+    //         break;
+    //     case "e":
+    //         alert("true");
+    //         break;
+    //     case "o":
+    //         alert("true");
+    //         break;
+    //     case "a":
+    //         alert("true");
+    //         break;
+    //     case "i":
+    //         alert("true");
+    //         break;
+    //     default:
+    //         alert("false");
+    // }
+    // for (let i = 0; i < arr.length ; i++) {
+    //     if (character == arr[i]) {
+    //         alert("true");
+    //     }else {
+    //         alert("false")
+    //     }
+    //
+    // }
+    for (let i = 0; i < word.length; i++) {
+       if (character === word[i]) {
+           document.write("là kí tự nguyên âm ")
+           arr.push(character);
+           break;
+       }
+
+    }
+    if (arr.length === 0) {
+        document.write("la phu am")
+    }
+</script>
+
+</html>
