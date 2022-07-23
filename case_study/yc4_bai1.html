@@ -10,18 +10,25 @@
         // Ví dụ tRuong    TaN   HAI => Truong Tan Hai.
         // Và một hàm tìm từ dài nhất trong 1 xâu ký tự.
         // Hàm main sử dụng các hàm này để nhập xâu ký tự từ bàn phím, in ra xâu trước và sau khi chuẩn hóa, 1 từ dài nhất trong xâu đó.
-      function kiemTra() {
-         str = str.split();
-          for (let i = 0; i < str.length ; i++) {
-              if (i ===0 || str[i-1] === " ") {
-
-              }
-
-          }
-      }
-      kiemTra()
-    let str ="tran  Viet   Huy "
-
+        let input = prompt("nhap");
+        let arr= [];
+        document.write( input + "<br>")
+        for (let i = 0; i < input.length; i++) {
+            arr.push(input.toLowerCase()[i])
+        }
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === ' '){
+                if (i === 0 || arr[i-1] === ' '){
+                    arr.splice(i,1);
+                    i--;
+                }
+            }else{
+                if (i === 0 || arr[i-1] === " "){
+                    arr[i] = arr[i].toUpperCase();
+                }
+            }
+        }
+        document.write("Output: "+arr.join(''));
 </script>
 </body>
 </html>
