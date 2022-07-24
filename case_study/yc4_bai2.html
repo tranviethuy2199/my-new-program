@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let c = "cbac";
+  let b =[] ;
+  for (let i = 0; i <c.length ; i++) {
+      if (i===0) {
+          b.push(c[i])
+      }else {
+          if (b.indexOf(c[i]) == -1) {
+              b.push(c[i])
+          }
+      }
+  }
+  console.log(b.length)
+</script>
+</body>
+</html>

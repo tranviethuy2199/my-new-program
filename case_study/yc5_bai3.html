@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết hàm tìm giá trị lớn nhất, nhỏ nhất trong mảng 2 chiều
+
+    // tìm giá trị lớn nhất nhỏ nhất trong mảng một chiều
+    function maxMin(arr) {
+        let max = arr[0];
+        let min = arr[0]
+
+        for (let i = 1; i < arr.length; i++) {
+            if (max < arr[i]) {
+                max = arr[i]
+            }
+
+            if (min > arr[i]) {
+                min = arr[i]
+
+            }
+
+        }
+        return [max,min];
+
+    }
+
+
+    let a = [
+        [1000,2,3],
+        [4,5,6]
+    ];
+
+    // trong mảng hai chiều , mỗi mảng sẽ là mảng một chiều
+    function maxMin2(arr) {
+        let max=Number.MIN_VALUE;
+        let min=Number.MAX_VALUE;
+        for (let i = 0; i <arr.length ; i++) {
+            let mm = maxMin(arr[i]);
+            if (max<mm[0]) {
+                max = mm[0];
+            }
+            if (min>mm[1]) {
+                min = mm[1];
+            }
+        }
+        return [max,min]
+
+
+    }
+</script>
+</body>
+</html>

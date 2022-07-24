@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<table>-->
+<!--    <tr>-->
+<!--        <th>Amount</th>-->
+<!--        <th>From Currency</th>-->
+<!--        <th>To Currency</th>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td><input type="text" id="amount"></td>-->
+<!--        <td>-->
+<!--            <select id="from">-->
+<!--                <option value="USD">USD</option>-->
+<!--                <option value="VND">VND</option>-->
+<!--            </select>-->
+<!--        </td>-->
+<!--        <td>-->
+<!--            <select id="to">-->
+<!--                <option value="VND">VND</option>-->
+<!--                <option VALUE="USD">USD</option>-->
+<!--            </select>-->
+<!--        </td>-->
+<!--        <td><button onclick="changeMoney()">Convert</button></td>-->
+<!--    </tr>-->
+
+<!--</table>-->
+<!--<br>-->
+<!--<p id="result"></p>-->
+<!--<script>-->
+<!--    function changeMoney() {-->
+<!--        let amount = document.getElementById('amount').value;-->
+<!--        let from = document.getElementById("from").value ;-->
+<!--        let to = document.getElementById("to").value;-->
+<!--        let result ;-->
+<!--        if (from==="USD" && to==="VND") {-->
+<!--            result = "your money :" + (amount*23000) + "vnd"-->
+<!--        }else if (from==="VND" && to==="USD") {-->
+<!--            result = "your money :" + (amount/23000) + "usd"-->
+<!--        }else if (from === "USD") {-->
+<!--            result = "result" + amount + "usd"-->
+<!--        }else {-->
+<!--            result = "result " + amount + "vnd"-->
+<!--        }-->
+<!--        document.getElementById("result").innerHTML=result-->
+
+<!--    }-->
+<!--</script>-->
+<script>
+   let chieuDai = +prompt("nhap chieu dai");
+   let  chieuRong = +prompt("nhap chieu rong");
+   for (let i = 1; i <chieuRong.length ; i++) {
+       for (let j = 1; j <chieuDai.length ; j++) {
+           if (i===1 || i===chieuDai) {
+               document.write("*")
+           }else if (j===1 || j===chieuRong ) {
+               document.write("*")
+           }else {
+               document.write("&nbsp&nbsp")
+           }
+
+       }
+       document.write("<br>")
+   }
+</script>
+</body>
+</html>

@@ -12,6 +12,7 @@
     let pay = 0 ;
     let soLuong ;
     do {
+        // tạo menu cho khách lựa chọn
         order = +prompt(
             "1.nước cam\n" +
             "2.nước lọc\n" +
@@ -24,7 +25,11 @@
         if (order===7) {
             break;
         }
+
+        // số lượng mà khách muốn lựa chọn
         soLuong = +prompt("số lượng")
+
+        // tính tiền
         pay = pay + (soLuong*price[order-1])
 
     }while (order < 7);
