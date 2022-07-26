@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   //  let n = (prompt("nhập đồ dài của mảng"));
+   //  let m = (prompt("nhập đồ rộng của mảng"));
+   //  let arr = [];
+   //  let arr1 = [];
+   //  for (let i = 0; i < n; i++) {
+   //      for (let j = 0; j < m; j++) {
+   //          arr[j] = prompt("nhập số" + (j+1));
+   //          arr1.push(arr[j]);
+   //      }
+   //  }
+   //
+   //  let sum = 0;
+   //  for (let i = 0; i < arr1.length; i++) {
+   //      for (let j = 0; j < arr1[i].length; j++) {
+   //          if (arr1[i][j] % 2 === 0) {
+   //              sum += parseInt(arr1[i][j]);
+   //          }
+   //      }
+   //  }
+   //  document.write(sum)
+
+
+    // khai báo khi nhập một mảng số nguyên n <=50
+  let soNguyen = +prompt("độ dài của mảng")
+   while (soNguyen >=50) {
+      soNguyen = +prompt("reset")
+   }
+
+   let soChan = 0 ;
+  let soLe = 0 ;
+  let total;
+
+
+
+   // khai báo mảng sô nguyên nhập vào
+  let mang = []
+   for (let i = 0; i < soNguyen; i++) {
+       mang[i] = +prompt("input number" + (i + 1));
+       mang.push(soNguyen[i])
+   }
+   for (let i = 0; i <mang.length ; i++) {
+       if (i%2===0) {
+           soChan += mang[i]
+       }
+   }
+
+
+
+   //em chưa hoàn thành được phần tính vị trí số chẵn và lẻ
+
+   // total = soChan-soLe
+   document.write(mang + "<br>") ;
+   document.write(soChan);
+
+
+
+
+
+
+</script>
+</body>
+</html>

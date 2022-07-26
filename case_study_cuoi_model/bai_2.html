@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkWord(string) {
+        let chuInHoa = [];
+        let chuThuong = [];
+        for (let i = 0; i <string.length ; i++) {
+            if (string[i]===string[i].toUpperCase()) {
+                chuInHoa.push(string[i])
+            }else {
+                chuThuong.push(string[i])
+            }
+        }
+        return [ chuInHoa.length , chuThuong.length]
+    }
+    alert(checkWord("Japanese"))
+</script>
+</body>
+</html>

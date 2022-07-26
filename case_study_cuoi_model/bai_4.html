@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="addProduct()">Information</button>
+<p id="display"></p>
+<script>
+    class Computer {
+        constructor(code , name , firm,price) {
+            this.code = code;
+            this.name = name;
+            this.firm = firm;
+            this.price = price;
+        }
+        getCode() {
+            return this.code ;
+        }
+        setCode(code) {
+            this.code = code ;
+        }
+        getName() {
+            return this.name ;
+        }
+        setName(name) {
+            this.name = name ;
+        }
+        getFirm() {
+            return this.firm ;
+        }
+        setFirm(firm) {
+            this.firm = firm ;
+        }
+        getPrice() {
+            return this.price ;
+        }
+        setPrice(price) {
+            this.price = price ;
+        }
+    }
+
+    // chưa khai báo được phương thức toString
+    let may1 = new Computer(111,"macbook" , "apple" , 50);
+    let may2 = new Computer(112,"vivo" , "ABC" , 20);
+    let may3 = new Computer(113,"imac" , "apple" , 30);
+    let computerList = [may1,may2,may3];
+    display(computerList);
+
+    // khai báo danh sách máy tính
+    function display(list) {
+        let tableString = '<table border="1">\n' +
+            '    <tr>\n' +
+            '        <th>Stt</th>\n' +
+            '        <th>Mã máy</th>\n' +
+            '        <th>Tên Máy</th>\n' +
+            '        <th>Tên Hãng Sản Xuất</th>\n' +
+            '        <th>Gía Bán</th>\n' +
+            '        <th colspan="2">Option</th>\n' +
+            '    </tr>';
+        for (let i = 0; i <list.length ; i++) {
+            tableString += '<tr>\n' +
+                '        <td>'+(i+1)+'</td>\n' +
+                '        <td>'+list[i].getCode()+'</td>\n' +
+                '        <td>'+list[i].getName()+'</td>\n' +
+                '        <td>'+list[i].getFirm()+'</td>\n' +
+                '        <td>'+list[i].getPrice()+'</td>\n' +
+                '        <td>\n' +
+                '            <button onclick="editProduct('+i+')">Edit</button>\n' +
+                '        </td>\n' +
+                '        <td>\n' +
+                '            <button onclick="deleteProduct('+i+')">Delete</button>\n' +
+                '        </td>\n' +
+                '    </tr>';
+
+
+        }
+        tableString += '</table>';
+        document.getElementById("display").innerHTML=tableString
+    }
+    function addProduct() {
+        let newCode = prompt("input new code");
+        let newName = prompt("input new name");
+        let newFirm = prompt("input new firm");
+        let newPrice = prompt("input new price");
+        let newCom = new Computer (newCode,newName,newFirm,newPrice);
+        computerList.push(newCom);
+        display(computerList)
+    }
+
+
+</script>
+</body>
+</html>

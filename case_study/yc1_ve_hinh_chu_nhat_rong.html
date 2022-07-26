@@ -6,34 +6,34 @@
 </head>
 <body>
 <script>
-    // let height = parseInt(prompt("Nhập chiều dài của hình chữ nhật"));
-    // let width = parseInt(prompt("Nhập chiều rộng của hình chữ nhật"));
-    // for (let i = 1; i <= width; i++) {
-    //     for (let j = 1; j <= height; j++) {
-    //         if (i === 1 || i === width) {
-    //             document.write("*");
-    //         } else if (j === 1 || j === height) {
-    //             document.write("*");
-    //         } else {
-    //             document.write("&ensp;");
-    //         }
-    //     }
-    //     document.write('<br>');
-    // }
-    for (let i = 1; i <= 5 ; i++) {
-        for (let j = 1; j <=i*5-1 ; j++) {
-            if (i===1 || i=== 5 ) {
-                document.write("*")
-            }else if (j===1 || j===i*5-1) {
-                document.write("&nbsp&nbsp")
-            }else {
-                document.write("*")
+    let height = parseInt(prompt("Nhập chiều dài của hình chữ nhật"));
+    let width = parseInt(prompt("Nhập chiều rộng của hình chữ nhật"));
+    for (let i = 1; i <= width; i++) {
+        for (let j = 1; j <= height; j++) {
+            if (i === 1 || i === width) {
+                document.write("*");
+            } else if (j === 1 || j === height) {
+                document.write("*");
+            } else {
+                document.write("&nbspnbsp");
             }
-
         }
-        document.write("<br>")
-
+        document.write('<br>');
     }
+    // for (let i = 1; i <= 5 ; i++) {
+    //     for (let j = 1; j <=i*5-1 ; j++) {
+    //         if (i===1 || i=== 5 ) {
+    //             document.write("*")
+    //         }else if (j===1 || j===i*5-1) {
+    //             document.write("&nbsp&nbsp")
+    //         }else {
+    //             document.write("*")
+    //         }
+    //
+    //     }
+    //     document.write("<br>")
+    //
+    // }
 
 </script>
 </body>

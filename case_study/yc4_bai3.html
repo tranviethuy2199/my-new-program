@@ -6,21 +6,32 @@
 </head>
 <body>
 <script>
-    // let s1 = "aabcc" ;
-    // let s2 = "adcaa" ;
+    // let mang1 = "aabcc" ;
+    // let mang2 = "adcaa" ;
     // let commonCharacterCount= []
     // for (let i = 0; i <s2.length ; i++) {
     //     for (let j = 0; j <s1.length ; j++) {
-    //         if (s2[i]==0) {
+    //         if (s2[i]== 0) {
     //             commonCharacterCount.push(s2[i]);
-    //         }else if ()
-    //
+    //         }else if (commonCharacterCount.indexOf(s2[i]==-1)){
+    //             commonCharacterCount.push(s2[i])
+    //         }
     //     }
-    //
     // }
-   let stt = "address";
-   stt.split(",").join(".")
-    console.log(stt)
+    function commonCharacterCount(s1,s2) {
+        let  count = 0 ;
+        for (let i = 0; i <s1.length ; i++) {
+            if (s2.includes(s1[i])) {
+                count++
+                s2=s2.replace(s1[i])
+            }
+
+        }
+        return count
+
+    }
+    commonCharacterCount()
+
 
 </script>
 </body>

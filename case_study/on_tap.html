@@ -5,67 +5,120 @@
     <title>Title</title>
 </head>
 <body>
-<!--<table>-->
+<table border="1">
 <!--    <tr>-->
-<!--        <th>Amount</th>-->
-<!--        <th>From Currency</th>-->
-<!--        <th>To Currency</th>-->
+<!--        <th></th>-->
+<!--        <th>Biển số</th>-->
+<!--        <th>Hãng xe</th>-->
+<!--        <th>Người lái</th>-->
 <!--    </tr>-->
 <!--    <tr>-->
-<!--        <td><input type="text" id="amount"></td>-->
+<!--        <td></td>-->
+<!--        <td></td>-->
 <!--        <td>-->
-<!--            <select id="from">-->
-<!--                <option value="USD">USD</option>-->
-<!--                <option value="VND">VND</option>-->
-<!--            </select>-->
+<!--            <button onclick="editProduct()">Edit</button>-->
 <!--        </td>-->
 <!--        <td>-->
-<!--            <select id="to">-->
-<!--                <option value="VND">VND</option>-->
-<!--                <option VALUE="USD">USD</option>-->
-<!--            </select>-->
+<!--            <button onclick="deleteProduct()"></button>-->
 <!--        </td>-->
-<!--        <td><button onclick="changeMoney()">Convert</button></td>-->
 <!--    </tr>-->
-
-<!--</table>-->
-<!--<br>-->
-<!--<p id="result"></p>-->
+</table>
+<!--<button onclick="addProduct()">Information</button>-->
+<!--<p id="display"></p>-->
 <!--<script>-->
-<!--    function changeMoney() {-->
-<!--        let amount = document.getElementById('amount').value;-->
-<!--        let from = document.getElementById("from").value ;-->
-<!--        let to = document.getElementById("to").value;-->
-<!--        let result ;-->
-<!--        if (from==="USD" && to==="VND") {-->
-<!--            result = "your money :" + (amount*23000) + "vnd"-->
-<!--        }else if (from==="VND" && to==="USD") {-->
-<!--            result = "your money :" + (amount/23000) + "usd"-->
-<!--        }else if (from === "USD") {-->
-<!--            result = "result" + amount + "usd"-->
-<!--        }else {-->
-<!--            result = "result " + amount + "vnd"-->
+<!--    class Car {-->
+<!--        constructor(bienSo, hangXe, nguoiLai) {-->
+<!--            this.bienSo = bienSo;-->
+<!--            this.hangXe = hangXe;-->
+<!--            this.nguoiLai = nguoiLai;-->
 <!--        }-->
-<!--        document.getElementById("result").innerHTML=result-->
+
+<!--        getBienSo() {-->
+<!--            return this.bienSo;-->
+<!--        }-->
+
+<!--        setBienSo(bienSo) {-->
+<!--            this.bienSo = bienSo-->
+<!--        }-->
+
+<!--        getHangXe() {-->
+<!--            return this.hangXe;-->
+<!--        }-->
+
+<!--        setHangXe(hangXe) {-->
+<!--            this.hangXe = hangXe;-->
+<!--        }-->
+
+<!--        getNguoiLai() {-->
+<!--            return this.nguoiLai;-->
+<!--        }-->
+
+<!--        setNguoiLai(nguoiLai) {-->
+<!--            this.nguoiLai = nguoiLai;-->
+<!--        }-->
 
 <!--    }-->
-<!--</script>-->
-<script>
-   let chieuDai = +prompt("nhap chieu dai");
-   let  chieuRong = +prompt("nhap chieu rong");
-   for (let i = 1; i <chieuRong.length ; i++) {
-       for (let j = 1; j <chieuDai.length ; j++) {
-           if (i===1 || i===chieuDai) {
-               document.write("*")
-           }else if (j===1 || j===chieuRong ) {
-               document.write("*")
-           }else {
-               document.write("&nbsp&nbsp")
-           }
 
-       }
-       document.write("<br>")
-   }
-</script>
+<!--    let car1 = new Car(4953, "hyundai", "drive");-->
+<!--    let car2 = new Car(4444, "Toyota", "drive");-->
+<!--    let car3 = new Car(6804, "BMW", "drive");-->
+<!--    let productList = [car1, car2, car3];  // mảng chứa các car...-->
+<!--    display(productList);-->
+
+
+<!--        // khởi tạo bảng chứa mảng list có các xe-->
+<!--    function display(list) {-->
+<!--        let tableString = '<table border="1">\n' +-->
+<!--            '    <tr>\n' +-->
+<!--            '        <th>Stt</th>\n' +-->
+<!--            '        <th>Biển số</th>\n' +-->
+<!--            '        <th>Hãng xe</th>\n' +-->
+<!--            '        <th>Người lái</th>\n' +-->
+<!--            '        <th colspan="2">Option</th>\n' +-->
+<!--            '    </tr>';-->
+<!--        for (let i = 0; i <list.length ; i++) {-->
+<!--            tableString += '<tr>\n' +-->
+<!--                '        <td>'+(i+1)+'</td>\n' +-->
+<!--                '        <td>'+list[i].getBienSo()+'</td>\n' +-->
+<!--                '        <td>'+list[i].getHangXe()+'</td>\n' +-->
+<!--                '        <td>'+list[i].getNguoiLai()+'</td>\n' +-->
+<!--                '        <td>\n' +-->
+<!--                '            <button onclick="editProduct('+i+')">Edit</button>\n' +-->
+<!--                '        </td>\n' +-->
+<!--                '        <td>\n' +-->
+<!--                '            <button onclick="deleteProduct('+i+')">Delete</button>\n' +-->
+<!--                '        </td>\n' +-->
+<!--                '    </tr>';-->
+
+
+<!--        }-->
+<!--        tableString += '</table>';-->
+<!--        document.getElementById("display").innerHTML=tableString-->
+<!--    }-->
+<!--    //sửa hàng hóa-->
+<!--    function addProduct() {-->
+<!--        let bienSo = prompt("nhập biển số mới");-->
+<!--        let hangXe = prompt("nhập hãng xe");-->
+<!--        let nguoiLai = prompt("nhập người lái");-->
+<!--        let newCar = new Car(bienSo,hangXe,nguoiLai)-->
+<!--        productList.push(newCar);-->
+<!--        display(productList)-->
+<!--    }-->
+
+<!--    //sửa hàng hóa-->
+<!--    function editProduct(index) {-->
+<!--        let editBienSo = prompt("nhập biển số xe mới");-->
+<!--        let editHangXe = prompt("nhập hãng xe");-->
+<!--        let editNguoiLai = prompt("nhập người lái");-->
+<!--        productList[index].setBienSo(editBienSo);-->
+<!--        productList[index].setHangXe(editHangXe);-->
+<!--        productList[index].setNguoiLai(editNguoiLai);-->
+<!--        display(productList);-->
+<!--    }-->
+
+<!--    //-->
+
+<!--</script>-->
+
 </body>
 </html>
