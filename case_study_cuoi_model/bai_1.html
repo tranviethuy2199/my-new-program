@@ -28,7 +28,7 @@
    //  document.write(sum)
 
 
-    // khai báo khi nhập một mảng số nguyên n <=50
+    // khai báo khi nhập độ dài mảng mảng số nguyên n <=50
   let soNguyen = +prompt("độ dài của mảng")
    while (soNguyen >=50) {
       soNguyen = +prompt("reset")
@@ -45,20 +45,26 @@
    for (let i = 0; i < soNguyen; i++) {
        mang[i] = +prompt("input number" + (i + 1));
        mang.push(soNguyen[i])
-   }
-   for (let i = 0; i <mang.length ; i++) {
        if (i%2===0) {
            soChan += mang[i]
+       }else if (i%2 !==0) {
+           soLe += mang[i]
        }
    }
+   // for (let i = 0; i <mang.length ; i++) {
+   //     if (i%2===0) {
+   //         soChan += mang[i]
+   //     }else if (i%2 !==0) {
+   //         soLe += mang[i]
+   //     }
+   //
+   // }
 
+   
 
-
-   //em chưa hoàn thành được phần tính vị trí số chẵn và lẻ
-
-   // total = soChan-soLe
+   total = soChan-soLe
    document.write(mang + "<br>") ;
-   document.write(soChan);
+   document.write(total);
 
 
 
